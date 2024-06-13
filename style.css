@@ -1,0 +1,290 @@
+:root {
+    --cor-de-fundo: #1F1517;
+    --cor-fonte-principal: #ffffff;
+    --fonte-primaria: 'Inter';
+    --fonte-secundaria: 'Montserrat';
+    --fonte-terciaria: 'Epilogue';
+    --fonte-quertenaria: 'Teko';
+
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-de-fundo);
+    color: #ffffff
+}
+
+html {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF2E780;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__logo {
+    font-family: Teko, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cabecalho__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.github {
+    font-weight: 600;
+    color: #FFF2E7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #181012;
+
+}
+
+.container__hero {
+
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+
+    padding: 0 2rem;
+    margin: auto;
+    overflow: clip;
+}
+
+.container__hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero__categoria {
+    font-family: Epilogue, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.laranja {
+    color: #A45A49;
+
+}
+
+.amarelo {
+    color: #E7A80E;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+hr {
+    border-color: #A45A49;
+
+}
+
+.hero__subtitulo {
+    color: #C7BAB3;
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.hero__imagem-container {
+    max-width: 45%;
+    column-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+
+}
+
+.hero__imagem-container > figure > img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.container__botao {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform:translate("0, -50%");
+}
+
+button {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #A45A49;
+}
+
+.receitas {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas__cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas__titulo {
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFF2E7;
+}
+
+.receitas__paragrafo {
+    color: #C7BAB3;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card__cafe {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.receita__card-container {
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.receitas__card {
+    background: #241A1C;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+
+.receitas__card-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.receitas__card-cabecalho-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas__card-titulo {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+.receitas__card-avaliacao {
+    color: #756A67;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.receitas__card-descricao {
+    color: #756A67;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receitas__autor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.receitas__autor > img {
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.receitas__autor-nome {
+    color: #756A67;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+
+.rodape {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #23181A;
+}
+
+.rodape__copy {
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFF2E7;
+
+}
+
+.rodape__autor {
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 242, 231, 0.50);
+
+}
